@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Typography, Card, CardContent, CardMedia } from '@mui/material'
-import { CheckCircle, NoEncryption } from '@mui/icons-material'
+import { CheckCircle } from '@mui/icons-material'
 import { demoThumbnailUrl, demoVideoTitle, demoVideoUrl, demoChannelUrl, demoChannelTitle } from '../utils/constants'
 
 const VideoCard = ({ video: {id: {videoId}, snippet} }) => {
@@ -19,7 +19,7 @@ const VideoCard = ({ video: {id: {videoId}, snippet} }) => {
           </Link>
           <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
             <Typography variant="subtitle2" sx={{color: "gray", fontWeight: "bold", mb: 1}}>{snippet?.channelTitle.slice(0, 60) || demoChannelTitle.slice(0, 60)}
-            <CheckCircle sx={{color: "gray", fontSize: "12", ml: "5px"}} />
+            <CheckCircle sx={{color: "gray", fontSize: 14 , ml: "5px"}} />
             </Typography>
           </Link>
         </CardContent>
