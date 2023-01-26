@@ -6,8 +6,6 @@ import { CheckCircle } from "@mui/icons-material";
 import { Videos } from "./"
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
-
-
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
@@ -21,7 +19,7 @@ const VideoDetail = () => {
       .then((data) => setVideos(data.items));
     }, [id]);
 
-  if(!videoDetail) return "Loading...";
+  if (!videoDetail?.snippet) return "Loading...";
 
   const { snippet: {title, channelId, channelTitle }, statistics: {viewCount, likeCount}} = videoDetail;
 
@@ -53,11 +51,12 @@ const VideoDetail = () => {
               </Stack>
             </Box>
           </Box>
+          <Box px={2} py={{md: 1, xs: 5}} justifyContent="center" alignItems="center" >
+            <Videos videos={videos} direction="column" />
+          </Box>
       </Stack>
 
-      <Box px={2} py={{md: 1, xs: 5}} justifyContent="center" alignItems="center" >
-        <Videos videos={videos} />
-      </Box>
+
 
     </Box>
   )
