@@ -10,11 +10,11 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
       <CardMedia 
       image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
       alt={channelDetail?.snippet?.title}
-      sx={{width: "180px", height: "180px", borderRadius: "50%", mb: 2, border: "1px solid #e3e3e3"}}
+      sx={{width: "180px", height: "180px", borderRadius: "25%", mb: 2, border: "1px solid #e3e3e3"}}
       />
-      <Typography variant="h6" fontWeight="bold" sx={{mb: 1}}>
+      <Typography variant="h6" fontWeight="bold" sx={{mb: 1, color: "#c1cce5"}}>
         {channelDetail?.snippet?.title}
-        <CheckCircle sx={{color: "gray", fontSize: 14 , ml: "5px"}} />
+        <CheckCircle sx={{color: "#8d6d9d", fontSize: 14 , ml: "5px"}} />
       </Typography>
       {channelDetail?.statistics?.subscriberCount && (
         <Typography>

@@ -17,7 +17,7 @@ const Feed = () => {
 
   return (
     <Stack sx={{ flexDirection:{sx: "column", md: "row" }}} >
-      <Box sx={{ height: {sx: "auto", md: "92vh"}, borderRight: "1px solid #3d3d3d", px: {sx: 0, md: 2} }} >
+      <Box sx={{ height: {sx: "auto", md: "92vh"}, borderRight: "3px solid #8d6d9d", px: {sx: 0, md: 2} }} >
         <Sidebar 
         
         selectedCategory = {selectedCategory}
@@ -25,14 +25,14 @@ const Feed = () => {
         
         />
 
-        <Typography className="copyright" variant="body2" sx={{mt: 1.5, color:"#fff"}}>
-          Copyright © 2021 by Me
+        <Typography className="copyright" variant="body2" sx={{mt: 1.5, color:"#c1cce5"}}>
+          Copyright © 2023 by FP
         </Typography>
       </Box>
       <Box p={2} sx={{overflowY: "auto", height: "90vh", flex: 2}}>
-      <Typography variant="h4" fontWeight="bold" mb={2} sx={{color: "white"}}>
-        {selectedCategory} <span style={{color: "#f31503"}}>
-          videos
+      <Typography variant="h4" fontWeight="bold" mb={2} sx={{color: "#c1cce5"}}>
+        {selectedCategory} <span style={{color: "#f6d68b"}}>
+          Videos
         </span>
       </Typography>
       <Videos videos={videos} />

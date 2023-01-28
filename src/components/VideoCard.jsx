@@ -13,13 +13,13 @@ const VideoCard = ({ video: {id: {videoId}, snippet} }) => {
         alt={snippet?.title} 
         sx={{width: {xs: "100%", sm: "358px", md:"320px" }, height: 180}} />
         </Link>
-        <CardContent sx={{backgroundColor: "#1e1e1e", height: "106px" }}>
+        <CardContent sx={{backgroundColor: "rgb(40,25,40)", height: "80px" }}>
           <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-            <Typography variant="subtitle1" sx={{color: "#fff", fontWeight: "bold", mb: 1}}>{snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}</Typography>
+            <Typography variant="subtitle1" sx={{color: "#c1cce5", fontWeight: "bold", mb: 1}}>{snippet?.title.slice(0, 70) || demoVideoTitle.slice(0, 70)}</Typography>
           </Link>
           <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-            <Typography variant="subtitle2" sx={{color: "gray", fontWeight: "bold", mb: 1}}>{snippet?.channelTitle.slice(0, 60) || demoChannelTitle.slice(0, 60)}
-            <CheckCircle sx={{color: "gray", fontSize: 14 , ml: "5px"}} />
+            <Typography variant="subtitle2" sx={{color: "#c1cce5", fontWeight: "bold", mb: 1}}>{snippet?.channelTitle.slice(0, 70) || demoChannelTitle.slice(0, 70)}
+            <CheckCircle sx={{color: "#8d6d9d", fontSize: 14 , ml: "5px"}} />
             </Typography>
           </Link>
         </CardContent>

@@ -16,7 +16,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 113, 113);
+  background-color: #aaa7ca;
   border-radius: 10px;
   height: 200px;
 }
@@ -26,12 +26,12 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
-  color: white !important;
+  background-color: #8d6d9d !important;
+  color: #f6d68b !important;
 }
 
 .category-btn:hover span{
-  color: white !important;
+  color: #f6d68b !important;
 }
 
 .react-player {
@@ -43,6 +43,7 @@ a {
   border:none;
   outline:none;
   width:350px;
+  background-color: #c1cce5;
 }
 
 .category-btn{

@@ -17,9 +17,9 @@ const SearchBar = () => {
   }
 
   return (
-    <Paper component="form" onSubmit={handleSubmit} sx={{borderRadius: 20, border: "1px solid #e3e3e3", pl: 2, boxShadow:"none", mr: {sm: 5}}}>
+    <Paper component="form" onSubmit={handleSubmit} sx={{background: "#c1cce5", borderRadius: 20, border: "2px solid #8d6d9d", pl: 2, boxShadow:"none", mr: {sm: 5}}}>
         <input className="search-bar" placeholder="Search..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-        <IconButton type="submit" sx={{ p:"10px", color:"black" }} >
+        <IconButton type="submit" sx={{ p:"10px", color:"#8d6d9d" }} >
             <Search />
         </IconButton>
     </Paper>
