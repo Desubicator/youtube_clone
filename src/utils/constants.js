@@ -12,27 +12,31 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 import CasinoIcon from '@mui/icons-material/Casino';
+import SportsMmaIcon from '@mui/icons-material/SportsMma';
+import SportsTennisIcon from '@mui/icons-material/SportsTennis';
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 export const logo = 'https://img.icons8.com/dusk/64/null/movie-projector.png';
 
 export const categories = [
-  { name: 'New', icon: <HomeIcon />, },
-  { name: 'JS Mastery', icon: <CodeIcon />, },
-  { name: 'Coding', icon: <CodeIcon />, },
+  { name: 'News', icon: <NewspaperIcon />, },
+  { name: 'TTRPG', icon: <CasinoIcon />, },
+  { name: 'Coding', icon: <DeveloperModeIcon />, },
+  { name: 'Javascript', icon: <CodeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
+  { name: 'Progressive Rock', icon: <MusicNoteIcon />, },
   { name: 'Heavy Metal', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
   { name: 'Movie', icon: <OndemandVideoIcon />, },
   { name: 'Gaming', icon: <SportsEsportsIcon />, },
   { name: 'Live', icon: <LiveTvIcon />, },
-  { name: 'Sport', icon: <FitnessCenterIcon />, },
-  { name: 'Fashion', icon: <CheckroomIcon />, },
-  { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
+  { name: 'Boxing', icon: <SportsMmaIcon />, },
+  { name: 'Tennis', icon: <SportsTennisIcon />, },
+  { name: 'Basketball', icon: <SportsBasketballIcon />, },
   { name: 'Comedy', icon: <TheaterComedyIcon />, },
-  { name: 'Gym', icon: <FitnessCenterIcon />, },
-  { name: 'TTRPG', icon: <CasinoIcon />, },
 ];
 
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
